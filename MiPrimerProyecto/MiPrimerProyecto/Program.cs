@@ -11,34 +11,45 @@ namespace miPrimerProyecto
     {
         static void Main(string[] args)
         {
-            //Uso de matrices.
-                {
-                int[] numeros = new int[] { 2, 8, 9, 10, 1, 3 };
+            //Uso de matrices. Calcular el suelo de una persona.
+            double[,] matriz = new double[,] {
+                {0.01,   487.6,  0, 0},
+                {487.61, 642.85, 10,17.48},
+                {642.86, 915.81, 10,32.70},
+                {915.82, 2058.67,20,60.00},
+                {2058.68,9999999,30,288.57},
+            };
+            Console.Write("Sueldo: ");
+            double sueldo = double.Parse(Console.ReadLine()),
+                afp = sueldo * 6.25/100,
+                isss = sueldo * 3/100;
+            isss = sueldo * 3/100;
+            isr = 0 ;
+            sueldo = sueldo - afp;
 
-                for (int i = 0; i < numeros.Length; i++)
+            double isr = 0;
+            for (int i = 0; i < 5; i++)
+            {
+                if (sueldo >= matriz[i,0] && sueldo <= matriz[i, 1])
                 {
-                    Console.WriteLine("Indice: {0} = {1}", i, numeros[i]);
+                    isr = (sueldo - (matriz[i, 0] - 0.01)) * matriz[i, 2] / 100 + matriz[i, 3];
                 }
-
-                int[,] matriz = new int[,] {
-                  { 5, 4, 5, 2, 1 },
-                  { 1, 2, 8, 9, 3 }
-        };
-
-                for (int i = 0; i < 2; i++)
-                {
-                    for (int j = 0; j < 5; j++)
-                    {
-                        Console.Write("{0} ", matriz[i, j]);
-                    }
-                    Console.WriteLine();
-                }
-
-                // Pausa
-                Console.ReadKey();
             }
+            sueldo -= isss;
+            sueldo -= isr;
+            Console.WriteLine("Sueldo Neto: {0}, AFP: {1}, ISSS: {2}, ISR: {3}", Math.Round(sueldo, 2), afp, isss, Math.Round(isr, 2));
+            Console.ReadLine();
         }
     }
 }
+
+
+
+
+
+
+
+
+
 
 
