@@ -5,3 +5,9 @@ C:\Users\criss11\Desktop\Progra1-2024-Semi\MiPrimerProyecto\MiPrimerProyecto\bin
 C:\Users\criss11\Desktop\Progra1-2024-Semi\MiPrimerProyecto\MiPrimerProyecto\bin\Debug\MiPrimerProyecto.pdb
 C:\Users\criss11\Desktop\Progra1-2024-Semi\MiPrimerProyecto\MiPrimerProyecto\obj\Debug\MiPrimerProyecto.exe
 C:\Users\criss11\Desktop\Progra1-2024-Semi\MiPrimerProyecto\MiPrimerProyecto\obj\Debug\MiPrimerProyecto.pdb
+C:\Users\criss11\Desktop\parcial 1\MiPrimerProyecto\MiPrimerProyecto\bin\Debug\MiPrimerProyecto.exe
+C:\Users\criss11\Desktop\parcial 1\MiPrimerProyecto\MiPrimerProyecto\bin\Debug\MiPrimerProyecto.pdb
+C:\Users\criss11\Desktop\parcial 1\MiPrimerProyecto\MiPrimerProyecto\obj\Debug\MiPrimerProyecto.csproj.AssemblyReference.cache
+C:\Users\criss11\Desktop\parcial 1\MiPrimerProyecto\MiPrimerProyecto\obj\Debug\MiPrimerProyecto.csproj.CoreCompileInputs.cache
+C:\Users\criss11\Desktop\parcial 1\MiPrimerProyecto\MiPrimerProyecto\obj\Debug\MiPrimerProyecto.exe
+C:\Users\criss11\Desktop\parcial 1\MiPrimerProyecto\MiPrimerProyecto\obj\Debug\MiPrimerProyecto.pdb
