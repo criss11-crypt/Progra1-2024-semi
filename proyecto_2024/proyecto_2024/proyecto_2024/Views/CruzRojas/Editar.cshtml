@@ -1,0 +1,67 @@
+﻿@model proyecto_2024.Models.CruzRoja
+
+@{
+    ViewData["Title"] = "Editar Registro";
+}
+
+<div class="container-fluid px-4 py-3">
+    <div class="card">
+        <div class="card-header bg-warning text-dark d-flex justify-content-between align-items-center">
+            <h1 class="card-title mb-0">
+                <i class="bi bi-pencil me-2"></i>Editar Registro
+            </h1>
+        </div>
+        <div class="card-body">
+            <form asp-action="Editar">
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+                <input type="hidden" asp-for="Id" />
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="Nombre" class="form-label">
+                            <i class="bi bi-person me-2"></i>Nombre
+                        </label>
+                        <input asp-for="Nombre" class="form-control" />
+                        <span asp-validation-for="Nombre" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="Direccion" class="form-label">
+                            <i class="bi bi-geo-alt me-2"></i>Dirección
+                        </label>
+                        <input asp-for="Direccion" class="form-control" />
+                        <span asp-validation-for="Direccion" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="Dui" class="form-label">
+                            <i class="bi bi-credit-card me-2"></i>DUI
+                        </label>
+                        <input asp-for="Dui" class="form-control" />
+                        <span asp-validation-for="Dui" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="DescripcionCaso" class="form-label">
+                            <i class="bi bi-file-text me-2"></i>Descripción del Caso
+                        </label>
+                        <input asp-for="DescripcionCaso" class="form-control" />
+                        <span asp-validation-for="DescripcionCaso" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between mt-3">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="bi bi-save me-2"></i>Guardar Cambios
+                    </button>
+                    <a asp-action="Index" class="btn btn-secondary">
+                        <i class="bi bi-arrow-left me-2"></i>Volver a la Lista
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
